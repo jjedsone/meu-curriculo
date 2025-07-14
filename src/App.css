@@ -1,0 +1,100 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f3f4f6; /* cinza claro */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  color: #1f2937; /* cinza escuro */
+  line-height: 1.6;
+}
+
+/* Container principal */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 32px 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+}
+
+/* Títulos */
+h1, h2 {
+  color: #2563eb; /* azul LinkedIn */
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+/* Links */
+a {
+  color: #2563eb;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+  color: #1e40af;
+  text-decoration: underline;
+}
+
+/* Itens do contato */
+.contact-item {
+  margin-bottom: 26px;
+  font-size: 1.1rem;
+}
+
+.contact-item strong {
+  font-weight: 600;
+}
+.content-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;   /* mais espaço à esquerda */
+  padding-right: 1rem;  /* menos espaço à direita */
+}
+
+
+/* Navbar links (se precisar) */
+.navbar a {
+  margin-right: 200px;
+  font-weight: 500;
+  color: #326bce;
+}
+
+.navbar a:hover {
+  color: #2563eb;
+}
+
+/* Espaçamento entre navbar e container */
+body > nav + .container {
+  margin-top: 20px;
+}
+.text-gray-80{
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+}
+/* Responsividade */
+@media (max-width: 600px) {
+  .container {
+    margin: 20px 16px;
+    padding: 24px 20px;
+  }
+}

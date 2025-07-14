@@ -1,0 +1,140 @@
+/* index.css - Estilo inspirado no LinkedIn */
+
+body {
+  background-color: #eef3f8;
+  color: #202124;
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  max-width: 1360px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+/* Títulos */
+h1, h2, h3, h4 {
+  font-weight: 700;
+  color: #0a66c2;
+  margin-top: 1;
+}
+
+/* Links */
+a {
+  color: #0a66c2;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+a:hover {
+  color: #004182;
+  text-decoration: underline;
+}
+
+/* Botões */
+button {
+  transition: all 0.2s ease-in-out;
+  font-size: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1.25rem;
+  background-color: #0a66c2;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+.btn:hover {
+  background-color: #004182;
+}
+
+.btn-outline {
+  padding: 0.5rem 1.25rem;
+  border: 2px solid #0a66c2;
+  color: #0a66c2;
+  background-color: transparent;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+.btn-outline:hover {
+  background-color: #e6f0fa;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--navbar-bg);
+  color: var(--navbar-text);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--navbar-border);
+  font-size: 1rem;
+}
+
+.navbar a {
+  color: var(--navbar-text);
+  text-decoration: none;
+  margin: 0 1rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar a:hover {
+  color: var(--link-color);
+}
+
+.nav-link {
+  display: inline-flex;        /* Adicionado */
+  align-items: center;         /* Adicionado */
+  gap: 0.4rem;                 /* Espaço entre ícone e texto */
+  color: #5e5e5e;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #0a66c2;
+}
+
+
+/* Conteúdo */
+.content-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Título de seção */
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #202124;
+  border-bottom: 1px solid #d1d5db;
+  padding-bottom: 0.5rem;
+}
+
+.content-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;   /* mais espaço à esquerda */
+  padding-right: 1rem;  /* menos espaço à direita */
+}
+
+
+
+.light {
+  --navbar-bg: #ffffff;
+  --navbar-text: #374151;
+  --navbar-border: #e5e7eb;
+  
+}
+
+.dark {
+  --navbar-bg: #1f2937;
+  --navbar-text: #f9fafb;
+  --navbar-border: #374151;
+  
+}
