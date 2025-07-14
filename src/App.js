@@ -14,16 +14,18 @@ function App() {
       <Navbar />
 
       {/* Conteúdo principal que cresce para preencher o espaço */}
-      <main className="container max-w-4xl mx-auto px-4 py-6 flex-grow">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/profissoes" element={<Profissoes />} />
-          <Route path="/jornada" element={<Jornada />} />
-          <Route path="/contato" element={<Contato />} />
-          {/* Rota fallback opcional */}
-          <Route path="*" element={<h2>Página não encontrada</h2>} />
-        </Routes>
-      </main>
+      <div className="container">
+        <main className="container max-w-4xl mx-auto px-4 py-6 flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/profissoes" element={<Profissoes />} />
+            <Route path="/jornada" element={<Jornada />} />
+            <Route path="/contato" element={<Contato />} />
+            {/* Rota fallback opcional */}
+            <Route path="*" element={<h2>Página não encontrada</h2>} />
+          </Routes>
+        </main>
+      </div>
 
       {/* Footer visível em todas as páginas */}
       <Footer />
